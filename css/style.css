@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -23,7 +23,7 @@ body.dark-mode {
 .content-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Center align items vertically */
     width: 100%;
     max-width: 1200px;
     margin-top: 20px;
