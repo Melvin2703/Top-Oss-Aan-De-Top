@@ -1,21 +1,44 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #ffffff;
+    color: #000000;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
 .center-image {
     max-width: 100%;
     height: auto;
     height: 75vh;
+    margin-right: 20px;
 }
 
 .excel-container {
-    margin-top: 20px;
     width: 80%;
     max-width: 1200px;
-    margin-left: 5%;
 }
 
 #excel-table {
@@ -57,6 +80,15 @@ body {
     background-color: #f9f9f9;
 }
 
+body.dark-mode #excel-table th {
+    background-color: #333333;
+    color: white; /* Make header text white in dark mode */
+}
+
+body.dark-mode #excel-table tr:nth-child(even) {
+    background-color: #444444;
+}
+
 .form-block {
     display: inline-block;
     width: 20px;
@@ -69,14 +101,17 @@ body {
 
 .form-block.w {
     background-color: green;
+    border-radius: 25%;
 }
 
 .form-block.g {
     background-color: orange;
+    border-radius: 25%;
 }
 
 .form-block.v {
     background-color: red;
+    border-radius: 25%;
 }
 
 #excel-table th {
@@ -103,4 +138,25 @@ body {
 #excel-table tr:nth-child(8) {
     background-color: #90EE90;
     color: black;
+}
+
+body.dark-mode #excel-table tr:nth-child(1),
+body.dark-mode #excel-table tr:nth-child(2) {
+    background-color: #006400; /* Dark green */
+    color: white;
+}
+
+body.dark-mode #excel-table tr:nth-child(3),
+body.dark-mode #excel-table tr:nth-child(4),
+body.dark-mode #excel-table tr:nth-child(5),
+body.dark-mode #excel-table tr:nth-child(6),
+body.dark-mode #excel-table tr:nth-child(7),
+body.dark-mode #excel-table tr:nth-child(8) {
+    background-color: #90EE90; /* Light green */
+    color: black;
+}
+
+body.dark-mode #excel-table tr:nth-child(16) {
+    background-color: #009FE3; /* Light blue */
+    color: white;
 }
