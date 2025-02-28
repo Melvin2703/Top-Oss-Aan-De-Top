@@ -4,22 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Oss</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .center-image {
-            max-width: 100%;
-            height: auto;
-            height: 75vh;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
     <img src="images/image.png" alt="Top Oss Logo" class="center-image">
+    <div class="excel-container">
+        <table id="excel-table"></table>
+    </div>
+    <script src="js/excel-reader.js"></script>
 </body>
 </html>
