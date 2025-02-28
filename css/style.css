@@ -9,13 +9,13 @@ body {
     max-width: 100%;
     height: auto;
     height: 75vh;
-    margin-left: 5%;
 }
 
 .excel-container {
     margin-top: 20px;
     width: 80%;
     max-width: 1200px;
+    margin-left: 5%;
 }
 
 #excel-table {
@@ -31,10 +31,76 @@ body {
     text-align: left;
 }
 
+#excel-table th:nth-child(2),
+#excel-table td:nth-child(2) {
+    max-width: 150px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#excel-table th:nth-child(10),
+#excel-table td:nth-child(10) {
+    max-width: 150px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 #excel-table th {
     background-color: #f2f2f2;
 }
 
 #excel-table tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+.form-block {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.form-block.w {
+    background-color: green;
+}
+
+.form-block.g {
+    background-color: orange;
+}
+
+.form-block.v {
+    background-color: red;
+}
+
+#excel-table th {
+    background-color: #f2f2f2;
+    color: black; 
+}
+
+#excel-table tr:nth-child(16) {
+    background-color: #009FE3;
+    color: white;
+}
+
+#excel-table tr:nth-child(1),
+#excel-table tr:nth-child(2) {
+    background-color: #008000;
+    color: white;
+}
+
+#excel-table tr:nth-child(3),
+#excel-table tr:nth-child(4),
+#excel-table tr:nth-child(5),
+#excel-table tr:nth-child(6),
+#excel-table tr:nth-child(7),
+#excel-table tr:nth-child(8) {
+    background-color: #90EE90;
+    color: black;
 }
